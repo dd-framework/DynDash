@@ -1,0 +1,7 @@
+{
+	"customDT": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path stroke='none' fill-rule='evenodd' d='M 905 2953.5 L 2952.5 5001 L 5000 2953.5 L 2952.5 906 Z'/></svg>",
+		"color": "rgb(159, 130, 255)",
+		"explanation": "A custom Data Type that is simply used for demonstrating how to set these up. Sources with this type include the data key 'customDT', which usually stores something really weird for demonstration purposes."
+	}
+}

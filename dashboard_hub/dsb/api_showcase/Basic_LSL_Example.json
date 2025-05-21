@@ -1,0 +1,144 @@
+{
+  "grid": {
+    "rows": "7",
+    "columns": "18",
+    "gaps": "5"
+  },
+  "slots": {
+    "22c560bf-e8c0-4045-9bf4-e5d5771afbe9": {
+      "name": "New Slot",
+      "area": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "component": "DDUrlButtons",
+      "sources": [
+        "LSL_Data_API_Controls"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#252525",
+          "LSL_Data_API_Controls/Scan for Devices": "#44a900",
+          "LSL_Data_API_Controls/Window -": "#673379",
+          "LSL_Data_API_Controls/Window +": "#673379",
+          "LSL_Data_API_Controls/Threshold -": "#3e49a3",
+          "LSL_Data_API_Controls/Threshold +": "#3e49a3",
+          "LSL_Data_API_Controls/Sending -": "#515474",
+          "LSL_Data_API_Controls/Sending +": "#515474",
+          "LSL_Data_API_Controls/Pulling -": "#a1814f",
+          "LSL_Data_API_Controls/Pulling +": "#a1814f",
+          "LSL_Data_API_Controls/Purge Devices": "#b42020"
+        },
+        "exclude": [
+          "LSL_Data_API_Controls/Sending -",
+          "LSL_Data_API_Controls/Sending +",
+          "LSL_Data_API_Controls/Pulling -",
+          "LSL_Data_API_Controls/Pulling +"
+        ]
+      }
+    },
+    "2954b14c-028d-451e-ac45-0c5187ce7b0b": {
+      "name": "New Slot",
+      "area": [
+        1,
+        10,
+        4,
+        18
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "exampleeeguid"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "chartVisuals": {
+          "xLabelLength": 5
+        },
+        "colors": {
+          "exampleeeguid/ch_0": "#ec0404",
+          "exampleeeguid/ch_2": "#00ff09",
+          "exampleeeguid/ch_1": "#0015ff",
+          "exampleeeguid/ch_3": "#ffc500",
+          "exampleeeguid/ch_4": "#ed00ff",
+          "exampleeeguid/ch_5": "#4bb4a5",
+          "exampleeeguid/ch_6": "#e6e6e6",
+          "exampleeeguid/ch_7": "#000000"
+        },
+        "exclude": [
+          "exampleeeguid/ch_1",
+          "exampleeeguid/ch_3",
+          "exampleeeguid/ch_4",
+          "exampleeeguid/ch_5",
+          "exampleeeguid/ch_6",
+          "exampleeeguid/ch_7"
+        ]
+      }
+    },
+    "f7bb907f-59b0-4f0d-b020-97cecb91ded7": {
+      "name": "New Slot",
+      "area": [
+        5,
+        2,
+        8,
+        8
+      ],
+      "component": "DDStatusDisplay",
+      "sources": [
+        "LSL_Data_API_Status"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "LSL_Data_API_Status/Anomaly Threshold": "#3e49a3",
+          "LSL_Data_API_Status/Anomaly Window": "#673379",
+          "LSL_Data_API_Status/Sending Interval": "#437c77",
+          "LSL_Data_API_Status/Pulling Timeout": "#a1814f",
+          "LSL_Data_API_Status/Serving": "#3f8f42"
+        },
+        "exclude": [
+          "LSL_Data_API_Status/Serving"
+        ]
+      }
+    },
+    "e8ec9d9e-99d9-4680-8847-726a01184539": {
+      "name": "New Slot",
+      "area": [
+        5,
+        10,
+        8,
+        18
+      ],
+      "component": "DDBarChartStreamRC",
+      "sources": [
+        "exampleeeguid_anomaly"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "chartVisuals": {
+          "xLabelLength": 5
+        },
+        "colors": {
+          "exampleeeguid_anomaly/ch_0": "#ec0404",
+          "exampleeeguid_anomaly/ch_2": "#00ff09",
+          "exampleeeguid_anomaly/ch_1": "#0015ff",
+          "exampleeeguid_anomaly/ch_3": "#ffc500",
+          "exampleeeguid_anomaly/ch_4": "#ed00ff",
+          "exampleeeguid_anomaly/ch_5": "#4bb4a5",
+          "exampleeeguid_anomaly/ch_6": "#e6e6e6",
+          "exampleeeguid_anomaly/ch_7": "#000000"
+        },
+        "exclude": [
+          "exampleeeguid_anomaly/ch_1",
+          "exampleeeguid_anomaly/ch_3",
+          "exampleeeguid_anomaly/ch_4",
+          "exampleeeguid_anomaly/ch_5",
+          "exampleeeguid_anomaly/ch_6",
+          "exampleeeguid_anomaly/ch_7"
+        ]
+      }
+    }
+  }
+}

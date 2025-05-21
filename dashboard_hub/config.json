@@ -1,0 +1,4 @@
+{
+	"port": "3001",
+	"dashboard_locations": ["./dsb/example_dashboards", "./dsb/api_showcase"]
+}

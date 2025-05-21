@@ -1,0 +1,64 @@
+{
+	"random-numbers": {
+		"name": "Random Numbers",
+		"information": "stream with 3 randomized values",
+		"explanation": "This Source holds a ddStream array. Each of the entries is an object with four keys, one of them being 'name', to indicate a marker. The other keys hold randomized values.",
+		"dataTypes": ["ddStream"],
+		"connection": {
+			"protocol": "WS",
+			"address": "ws://localhost:4451/sources/data",
+			"endpoint": "random-numbers"
+		}
+	},
+
+	"random-letters": {
+		"name": "Random Letters",
+		"information": "stream with one randomized letter",
+		"explanation": "This Source holds a ddStream array. Each of the entries is an object with two keys, one of them being 'name', to indicate a marker. The other key ('letter') holds a randomized character.",
+		"dataTypes": ["ddStream"],
+		"connection": {
+			"protocol": "WS",
+			"address": "ws://localhost:4451/sources/data",
+			"endpoint": "random-letters"
+		}
+	},
+
+	"random-string": {
+		"name": "Random String",
+		"information": "2 alphanumeric status values",
+		"explanation": "This Source holds a ddStatus object with two keys that each hold a randomized string.",
+		"dataTypes": ["ddStatus"],
+		"connection": {
+			"protocol": "REST",
+			"address": "http://localhost:4451/sources/data",
+			"endpoint": "random-string",
+			"interval": 5000,
+			"method": "GET"
+		}
+	},
+
+	"useless-urls": {
+		"name": "Useless URLs",
+		"information": "collection of urls that do nothing",
+		"explanation": "This Source holds a ddURL object that stores a couple of URLs that ultimately do nothing. They are just used in order to showcase how these sources look.",
+		"dataTypes": ["ddURL"],
+		"connection": {
+			"protocol": "WS",
+			"address": "ws://localhost:4451/sources/data",
+			"endpoint": "useless-urls"
+		}
+	},
+
+	"custom-source-example": {
+		"name": "Custom Example",
+		"information": "data in the form of customDT",
+		"explanation": "This Device holds an data in the form best described by customDT.",
+		"dataTypes": ["customDT"],
+		"connection": {
+			"protocol": "REST",
+			"address": "http://localhost:4451/sources/data",
+			"endpoint": "custom-source-example",
+			"method": "GET"
+		}
+	}
+}

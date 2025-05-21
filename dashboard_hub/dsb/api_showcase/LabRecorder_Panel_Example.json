@@ -1,0 +1,86 @@
+{
+  "grid": {
+    "rows": "7",
+    "columns": "18",
+    "gaps": "5"
+  },
+  "slots": {
+    "51fe4332-c4dd-431d-adf6-882932f004be": {
+      "name": "New Slot",
+      "area": [
+        2,
+        10,
+        7,
+        18
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "exampleeeguid"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "chartVisuals": {
+          "xLabelLength": 5
+        }
+      }
+    },
+    "58038594-5019-448c-a769-34ef088c44d8": {
+      "name": "New Slot",
+      "area": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "component": "LiALRPanel",
+      "sources": [
+        "LabRecorder_Actions",
+        "LabRecorder_Status"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#252525",
+          "LabRecorder_Actions/Connect LabRecorder": "#44a900",
+          "LabRecorder_Actions/Start LabRecorder": "#44a900",
+          "LabRecorder_Actions/Stop LabRecorder": "#bc2828"
+        },
+        "exclude": [
+          "general/info"
+        ]
+      }
+    },
+    "cf854eec-9348-4f87-8446-8bd6720205aa": {
+      "name": "New Slot",
+      "area": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "component": "DDUrlButtons",
+      "sources": [
+        "LSL_Data_API_Controls"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#252525",
+          "LSL_Data_API_Controls/Scan for Devices": "#44a900"
+        },
+        "exclude": [
+          "LSL_Data_API_Controls/Threshold -",
+          "LSL_Data_API_Controls/Threshold +",
+          "LSL_Data_API_Controls/Window -",
+          "LSL_Data_API_Controls/Window +",
+          "LSL_Data_API_Controls/Sending -",
+          "LSL_Data_API_Controls/Sending +",
+          "LSL_Data_API_Controls/Pulling -",
+          "LSL_Data_API_Controls/Pulling +",
+          "LSL_Data_API_Controls/title",
+          "LSL_Data_API_Controls/Purge Devices"
+        ]
+      }
+    }
+  }
+}

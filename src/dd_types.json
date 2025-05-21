@@ -1,0 +1,31 @@
+{
+	"ddStream": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path stroke='none' fill-rule='evenodd' d='M 5000 2953.5 L 3197 4884 L 3197 3571.26001 L 2647 3571.26001 L 2647 2335.73999 L 3197 2335.73999 L 3197 1023 Z M 1777 3571 L 2328 3571 L 2328 2336 L 1777 2336 Z M 906 3571 L 1457 3571 L 1457 2336 L 906 2336 Z'></path></svg>",
+		"color": "rgb(147, 51, 234)",
+		"explanation": "Sources with this type include the data key 'ddStream', which usually stores an array of objects, each containing at least the key 'name' with an associated value, but also one or more named key-value pairs."
+	},
+
+	"ddStatus": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path stroke='none' fill-rule='evenodd' d='M 906 4186 L 2606 4186 L 2606 1720 L 906 1720 Z M 5000 2475 L 3189 2475 L 3189 1918 L 5000 1918 L 5000 2475 Z M 3189 3988 L 5000 3988 L 5000 3431 L 3189 3431 Z'></path></svg>",
+		"color": "rgb(96, 165, 250)",
+		"explanation": "Sources with this type include the data key 'ddStatus', which usually stores an object whose keys represent the names of status entries with the associated values representing the content of the status. The values can range from something simple like a number, string, or boolean, to entire objects."
+	},
+
+	"ddURL": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path stroke='none' fill-rule='evenodd' d='m906 2401h557v-557h-557zm0 1513h557v-557h-557zm2543.479004 970.450684-508.844727-226.552246 1550.886719-3483.349122 508.844727 226.552247zm-1379-152-508.844849-226.552246 1550.886841-3483.349122 508.844727 226.552247z'/></svg>",
+		"color": "rgb(237, 100, 166)",
+		"explanation": "Sources with this type include the data key 'ddURL', which usually stores an object whose keys represent the names of URL actions. A URL action is represented by an object containing at least the value for the key 'url', with optional key-value pairs for 'method', 'headers', and 'body'. These default to 'POST', {'Content-Type': 'application/json'}, and null, respectively. The value for 'body' is only honored when 'method' is explicitly set to 'POST' or defaults to that value."
+	},
+
+	"ddGeneric": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path stroke='none' fill-rule='evenodd' d='M 1362 3232 L 1919 3232 L 1919 2675 L 1362 2675 Z M 2674 3232 L 3231 3232 L 3231 2675 L 2674 2675 Z M 3986 3232 L 4543 3232 L 4543 2675 L 3986 2675 Z'></path></svg>",
+		"color": "rgb(26, 32, 44)",
+		"explanation": "Sources with this type usually include entirely custom keys, which usually store entirely custom values."
+	},
+
+	"unknown": {
+		"icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5906 5906' stroke-width='1.5' stroke='currentColor' fill='#ffffff' class='w-5 h-5 mr-0 inline align-middle'><path id='questionMark' fill='#ffffff' fill-rule='evenodd' stroke='none' d='M 3313.375977 3441.981445 C 3293.863525 3503.771484 3283.294434 3599.707275 3281.668213 3729.791016 L 2623.12085 3729.791016 C 2632.877197 3454.988525 2658.893311 3265.150146 2701.170898 3160.269775 C 2743.448486 3055.389404 2852.391602 2934.656738 3028.005615 2798.068604 L 3206.057129 2659.041992 C 3264.594727 2615.138916 3311.749756 2567.170898 3347.522949 2515.137207 C 3412.564697 2425.704102 3445.085449 2327.329834 3445.085449 2220.010498 C 3445.085449 2096.43042 3408.90625 1983.828613 3336.547119 1882.200195 C 3264.187988 1780.571777 3132.072998 1729.758789 2940.199219 1729.758789 C 2751.577148 1729.758789 2617.83667 1792.36084 2538.973145 1917.56665 C 2460.109619 2042.772217 2420.678467 2172.854736 2420.678467 2307.816895 L 1715.789063 2307.816895 C 1735.301636 1844.39209 1897.091431 1515.935059 2201.162842 1322.435059 C 2393.036621 1198.85498 2628.810547 1137.065918 2908.491455 1137.065918 C 3275.979004 1137.065918 3581.265137 1224.871094 3824.359863 1400.484863 C 4067.454102 1576.098633 4189 1836.262695 4189 2180.985352 C 4189 2392.371826 4136.153809 2570.422363 4030.460938 2715.140381 C 3968.670898 2802.946777 3849.971436 2915.143066 3674.357422 3051.731201 L 3501.183838 3185.879883 C 3406.872559 3259.051758 3344.270996 3344.418457 3313.375977 3441.981445 Z M 3332.888428 4768.83252 L 2606.047363 4768.83252 L 2606.047363 4063.942871 L 3332.888428 4063.942871 Z'/></svg>",
+		"color": "rgb(26, 32, 44)",
+		"explanation": "This Data Type PLACEHOLDER is unknown and may need to be provided by a custom Type Provider API."
+	}
+}

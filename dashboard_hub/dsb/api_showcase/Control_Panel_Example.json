@@ -1,0 +1,71 @@
+{
+  "grid": {
+    "rows": "7",
+    "columns": "18",
+    "gaps": "5"
+  },
+  "slots": {
+    "51fe4332-c4dd-431d-adf6-882932f004be": {
+      "name": "New Slot",
+      "area": [
+        2,
+        9,
+        7,
+        18
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "exampleeeguid"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "chartVisuals": {
+          "xLabelLength": 5
+        }
+      }
+    },
+    "9b04a2ab-404b-49e4-9fc6-9346f086903c": {
+      "name": "New Slot",
+      "area": [
+        1,
+        1,
+        8,
+        8
+      ],
+      "component": "LiAAPIPanel",
+      "sources": [
+        "LSL_Data_API_Status",
+        "LSL_Data_API_Controls",
+        "Recording_Loaders"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#252525",
+          "LSL_Data_API_Controls/Scan for Devices": "#44a900",
+          "LSL_Data_API_Controls/Window -": "#673379",
+          "LSL_Data_API_Controls/Window +": "#673379",
+          "LSL_Data_API_Controls/Threshold -": "#3e49a3",
+          "LSL_Data_API_Controls/Threshold +": "#3e49a3",
+          "LabRecorder_Actions/Connect LabRecorder": "#44a900",
+          "LSL_Data_API_Controls/Sending -": "#437c77",
+          "LSL_Data_API_Controls/Sending +": "#437c77",
+          "LSL_Data_API_Controls/Pulling -": "#a1814f",
+          "LSL_Data_API_Controls/Pulling +": "#a1814f",
+          "LSL_Data_API_Status/Anomaly Threshold": "#3e49a3",
+          "LSL_Data_API_Status/Anomaly Window": "#673379",
+          "LSL_Data_API_Status/Sending Interval": "#437c77",
+          "LSL_Data_API_Status/Pulling Timeout": "#a1814f",
+          "LSL_Data_API_Controls/Purge Devices": "#b42020",
+          "LSL_Data_API_Status/Serving": "#3f8f42",
+          "Recording_Loaders/Load Dummy": "#7a7a7a"
+        },
+        "exclude": [
+          "general/info",
+          "lsl/info",
+          "anomaly/info"
+        ]
+      }
+    }
+  }
+}

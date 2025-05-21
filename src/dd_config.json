@@ -1,0 +1,63 @@
+{
+	"providers": {
+		"dashboards": ["http://localhost:3001"],
+		"components": [
+			"http://localhost:4433",
+			"http://localhost:9123",
+			"http://localhost:3151"
+		],
+		"sources": [
+			"http://localhost:4451",
+			"http://localhost:9123",
+			"http://localhost:3151"
+		],
+		"types": [
+			"http://localhost:4451",
+			"http://localhost:9123",
+			"http://localhost:3151"
+		],
+		"inactive": []
+	},
+	"dd_frontend": {
+		"backgroundImage": "bg-[url('/public/backgrounds/blob-scene-haikei.svg')]",
+		"backgroundSize": "bg-cover",
+		"keyboardShortcuts": {
+			"toggleInfoMode": ["⌘", "I"],
+			"toggleToolTips": ["⌘", "J"],
+			"toggleToolbar": ["T"],
+			"toggleAlerts": ["⌘", "A"],
+			"globalClose": ["esc"],
+			"cancelModal": ["esc"],
+			"confirmModal": ["⌘", "↵"],
+			"renameFile": ["⌘", "E"],
+			"saveFile": ["⌘", "S"],
+			"duplicateFile": ["⌘", "B"],
+			"createFile": ["⌘", "B"],
+			"deleteFile": ["⌘", "⌫"],
+			"recoverFile": ["⌘", "⌫"],
+			"showDeleted": ["⌘", "⌫"],
+			"deleteSelection": ["⇧", "⌫"],
+			"uploadFile": ["⌘", "U"],
+			"reloadProviders": ["⇧", "R"],
+			"gridMode": ["⌘", "G"],
+			"showJSONPane": ["⌘", "J"],
+			"leftFile": ["⌘", "⇧", "←"],
+			"rightFile": ["⌘", "⇧", "→"],
+			"coulmnsDecrease": ["⌘", "←"],
+			"coulmnsIncrease": ["⌘", "→"],
+			"rowsDecrease": ["⌘", "↑"],
+			"rowsIncrease": ["⌘", "↓"],
+			"gapsDecrease": ["⌘", "."],
+			"gapsIncrease": ["⌘", "#"],
+			"moveSlot": ["M"],
+			"drawSlot": ["D"],
+			"resizeSlot": ["R"],
+			"selectSlot": ["S"]
+		},
+		"dd_ranges": {
+			"Newest 50 Values": {"start": "$MAX-50", "end": "$MAX"},
+			"Newest 100 Values": {"start": "$MAX-100", "end": "$MAX"},
+			"Last half of Values": {"start": "$MAX/2", "end": "$MAX"}
+		}
+	}
+}

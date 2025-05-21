@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.cursor-green-glow {
+		cursor: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><filter id="filter1" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.2"/><feOffset dx="-0.814587" dy="0.814587" result="offsetblur"/><feFlood flood-color="%2346cb44" flood-opacity="1"/><feComposite in2="offsetblur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><path id="pencil" fill="%23000000" fill-rule="evenodd" stroke="%23ffffff" stroke-width="0.96" stroke-linecap="round" stroke-linejoin="round" filter="url(%23filter1)" d="M 3.355637 28.645262 L 8.728324 27.200993 L 4.799908 23.272575 L 3.355637 28.645262 Z M 10.157859 25.771458 L 25.215113 10.714207 L 21.286695 6.785789 L 6.229442 21.843042 L 10.157859 25.771458 Z M 28.639999 7.289316 L 26.695049 9.234268 L 22.766632 5.305851 L 24.711584 3.360899 L 28.639999 7.289316 Z"/></svg>')
+				0 31,
+			auto;
+	}
+
+	.cursor-purple-blob {
+		cursor: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><filter id="filter1" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.2"/><feOffset dx="2.262742" dy="-2.262742" result="offsetblur"/><feFlood flood-color="%23941ef8" flood-opacity="1"/><feComposite in2="offsetblur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><path id="Oval" fill="%23941ef8" fill-opacity="0.35" fill-rule="evenodd" stroke="none" filter="url(%23filter1)" d="M 16.016001 6.912001 C 10.988 6.912001 6.912 10.988001 6.912 16.015999 C 6.912 21.044001 10.988 25.119999 16.016001 25.119999 C 21.044001 25.119999 25.120001 21.044001 25.120001 16.015999 C 25.120001 10.988001 21.044001 6.912001 16.016001 6.912001 Z"/></svg>')
+				16 16,
+			auto;
+	}
+}

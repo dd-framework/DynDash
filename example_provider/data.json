@@ -1,0 +1,33 @@
+{
+	"random-numbers": {
+		"ddStream": [{ "name": 0, "a": 2, "b": 4, "c": 17 }]
+	},
+
+	"random-letters": {
+		"ddStream": [{ "name": 0, "letter": "A" }]
+	},
+
+	"random-string": {
+		"ddStatus": {
+			"first": "ignalefi",
+			"second": "soegmiago"
+		}
+	},
+
+	"useless-urls": {
+		"ddURL": {
+			"dummy A": {
+				"url": "https://about.gitlab.com",
+				"method": "GET"
+			},
+			"dummy B": {
+				"url": "https://react.dev",
+				"method": "GET"
+			}
+		}
+	},
+
+	"custom-source-example": {
+		"customDT": [[[[[[[[[[[[[[[[[["convoluted structure"]]]]]]]]]]]]]]]]]]
+	}
+}

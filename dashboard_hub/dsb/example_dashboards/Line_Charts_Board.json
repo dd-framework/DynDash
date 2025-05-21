@@ -1,0 +1,119 @@
+{
+  "grid": {
+    "rows": 6,
+    "columns": 4,
+    "gaps": 24
+  },
+  "slots": {
+    "24e675e6-8137-4bf2-935e-9ec152bf363e": {
+      "name": "New Slot",
+      "area": [
+        1,
+        1,
+        4,
+        4
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "random-numbers"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#392557",
+          "general/grid": "#333333",
+          "general/axis": "#9f9f9f",
+          "random-numbers/a": "#ff0000",
+          "random-numbers/b": "#0fff00",
+          "random-numbers/c": "#59efff"
+        },
+        "exclude": [
+          "random-numbers/c"
+        ]
+      }
+    },
+    "581a13b2-9919-4d70-bd59-e73bf592fa37": {
+      "name": "New Slot",
+      "area": [
+        4,
+        1,
+        7,
+        4
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "random-numbers"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#1f1f1f",
+          "general/grid": "#333333",
+          "general/axis": "#9f9f9f",
+          "random-numbers/a": "#ff0000",
+          "random-numbers/b": "#0fff00",
+          "random-numbers/c": "#59efff"
+        },
+        "exclude": [
+          "random-numbers/c"
+        ]
+      }
+    },
+    "b454f013-2760-46ba-a466-60f4c023e432": {
+      "name": "New Slot",
+      "area": [
+        1,
+        4,
+        4,
+        5
+      ],
+      "component": "DDStreamComment",
+      "sources": [
+        "random-numbers"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "DDStreamComment": "Comment:\n\nThe 'Line Chart' Component on the Left is showcasing the Stream Data from a source that generates continuous random values\n\nThis Component is a Comment Component whose text has been altered through its JSON settings pane",
+        "colors": {
+          "general/background": "#392557",
+          "general/grid": "#333333",
+          "general/axis": "#9f9f9f",
+          "random-numbers/a": "#ff0000",
+          "random-numbers/b": "#0fff00",
+          "random-numbers/c": "#59efff"
+        },
+        "exclude": [
+          "random-numbers/c"
+        ]
+      }
+    },
+    "e66fdcc3-c5b6-4773-a413-0cebd8772bf2": {
+      "name": "New Slot",
+      "area": [
+        4,
+        4,
+        7,
+        5
+      ],
+      "component": "DDStreamComment",
+      "sources": [
+        "random-numbers"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "DDStreamComment": "Comment:\n\nThe 'Bar Chart' Component on the Left is showcasing the Stream Data from a source that generates continuous random values\n\nThis Component is a Comment Component whose text has been altered through its JSON settings pane",
+        "colors": {
+          "general/background": "#1f1f1f",
+          "general/grid": "#333333",
+          "general/axis": "#9f9f9f",
+          "random-numbers/a": "#ff0000",
+          "random-numbers/b": "#0fff00",
+          "random-numbers/c": "#59efff"
+        },
+        "exclude": [
+          "random-numbers/c"
+        ]
+      }
+    }
+  }
+}

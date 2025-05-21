@@ -1,0 +1,80 @@
+{
+  "grid": {
+    "rows": 7,
+    "columns": "18",
+    "gaps": "5"
+  },
+  "slots": {
+    "3e5b3cbc-cfe6-4f08-8465-9860100bdd7e": {
+      "name": "Slot for Buttons",
+      "area": [
+        2,
+        9,
+        4,
+        16
+      ],
+      "component": "DDUrlButtons",
+      "sources": [
+        "useless-urls"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "shock-generator-api/10 Volt": "#31d95c",
+          "shock-generator-api/20 Volt": "#ff9f34",
+          "shock-generator-api/100 Volt": "#ef1d1d",
+          "image-display-api/Show Cake": "#df21ff",
+          "image-display-api/Show Cat": "#8d4a17",
+          "image-display-api/Show Monster": "#5100c7",
+          "useless-urls/dummy A": "#52c54a",
+          "useless-urls/dummy B": "#d93737",
+          "general/background": "#282828"
+        },
+        "exclude": [
+          "image-display-api/Show Airplane"
+        ]
+      }
+    },
+    "27ffef28-9cd5-4974-96fe-e72cf9d1bdbb": {
+      "name": "Slot for Status",
+      "area": [
+        5,
+        9,
+        7,
+        16
+      ],
+      "component": "DDStatusDisplay",
+      "sources": [
+        "random-string"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "exclude": [
+          "emotion-interpreter/thirst"
+        ],
+        "colors": {
+          "general/background": "#292d79"
+        }
+      }
+    },
+    "4d9ac0e2-fb89-4172-bb47-cbb27d1abefb": {
+      "name": "Comment Slot",
+      "area": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "component": "DDStreamComment",
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "DDStreamComment": "This Dashboard showcases the 'URL Button Panel' Component and the 'Status Display' Component.\n\nThe 'URL Button Panel' is equipped with a Source holding dummy URLs and the 'Status Display' holds a Source with ever-changing statuses that are randomly generated",
+        "colors": {
+          "general/commentText": "#a8a8a8",
+          "general/comment": "#412a48"
+        }
+      },
+      "sources": []
+    }
+  }
+}

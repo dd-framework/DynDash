@@ -1,0 +1,99 @@
+{
+  "grid": {
+    "rows": "7",
+    "columns": "18",
+    "gaps": "5"
+  },
+  "slots": {
+    "51fe4332-c4dd-431d-adf6-882932f004be": {
+      "name": "New Slot",
+      "area": [
+        2,
+        10,
+        7,
+        18
+      ],
+      "component": "DDLineChartStreamRC",
+      "sources": [
+        "exampleeeguid"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "chartVisuals": {
+          "xLabelLength": 5
+        }
+      }
+    },
+    "39ec4da3-a3a2-4d58-a3e2-3dcdf6d5e293": {
+      "name": "New Slot",
+      "area": [
+        2,
+        5,
+        4,
+        9
+      ],
+      "component": "DDStatusDisplay",
+      "sources": [
+        "LabRecorder_Status"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "exclude": [
+          "LabRecorder_Status/LabRecorder Preset"
+        ]
+      }
+    },
+    "58038594-5019-448c-a769-34ef088c44d8": {
+      "name": "New Slot",
+      "area": [
+        4,
+        2,
+        7,
+        9
+      ],
+      "component": "DDUrlButtons",
+      "sources": [
+        "LabRecorder_Actions"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "LabRecorder_Actions/Connect LabRecorder": "#44a900",
+          "LabRecorder_Actions/Start LabRecorder": "#44a900",
+          "LabRecorder_Actions/Stop LabRecorder": "#bc2828"
+        }
+      }
+    },
+    "cf854eec-9348-4f87-8446-8bd6720205aa": {
+      "name": "New Slot",
+      "area": [
+        2,
+        2,
+        4,
+        5
+      ],
+      "component": "DDUrlButtons",
+      "sources": [
+        "LSL_Data_API_Controls"
+      ],
+      "settings": {
+        "_comment": "use the interface or this textbox",
+        "colors": {
+          "general/background": "#252525",
+          "LSL_Data_API_Controls/Scan for Devices": "#44a900"
+        },
+        "exclude": [
+          "LSL_Data_API_Controls/Threshold -",
+          "LSL_Data_API_Controls/Threshold +",
+          "LSL_Data_API_Controls/Window -",
+          "LSL_Data_API_Controls/Window +",
+          "LSL_Data_API_Controls/Sending -",
+          "LSL_Data_API_Controls/Sending +",
+          "LSL_Data_API_Controls/Pulling -",
+          "LSL_Data_API_Controls/Pulling +",
+          "LSL_Data_API_Controls/Purge Devices"
+        ]
+      }
+    }
+  }
+}

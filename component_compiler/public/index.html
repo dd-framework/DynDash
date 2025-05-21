@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DynDash Component Compiler</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Upload a .jsx Component for Compilation</h1>
+			<p>
+				In order to serve a Component via a Provider API, it needs to be
+				compiled and have all the external libraries bundled in (except
+				for React and ReactDOM).
+			</p>
+			<p>
+				This helper-application was developed, since it is tedious to do
+				this manually, and annoying to write the compilation logic into
+				every single Provider API Application.
+			</p>
+			<p>
+				Once you are done developing your .jsx Component, compile the
+				file using this tool and only serve the compiled version. Make
+				sure that all of the needed libraries are installed in the
+				parent directory of this application before running it.
+			</p>
+			<div id="drop-area" class="drop-area">
+				<input type="file" id="file-input" accept=".jsx" />
+				<span>Drop file here or click to upload</span>
+			</div>
+		</div>
+	</body>
+</html>

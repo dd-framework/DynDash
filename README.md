@@ -1,93 +1,148 @@
-# dyndash
+# DynDash
 
+The application [DynDash](/README.md) (Dynamic Dashboards) aims to provide users the ability to quickly create **Dashboards** that visualize diverse data types.
 
+![DynDash_Example](/media/screenshots/DynDash_Example.png)
 
-## Getting started
+It allows users to:
+- Create and manage **Dashboards** with multiple **Slots**, which can be rearranged and modified easily
+- Populate those **Slots** with **Components**, **Sources**, and **Settings**, creating powerful visualizations
+- Manage various **Provider** APIs that can be connected to the [DynDash](/README.md) application, each supplying specialized entities
+    > [!info]
+	> The API spec for **Providers** is laid out [here](/example_provider/API_SPECIFICATION.md)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+---
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Structure
 
-## Add your files
+As a brief illustration, the following image shows how the application is structured:
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+![DynDash_Application_Structure_2b](/media/structures/DynDash_Application_Structure_2b.png)
 
-```
-cd existing_repo
-git remote add origin https://gitlab.bht-berlin.de/s91198/dyndash.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.bht-berlin.de/s91198/dyndash/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+---
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+This project was built using [Node.js](https://nodejs.org/en) `v23.2.0`. It may be possible to run the App using other versions, but this has not been tested. Multiple installations of [Node.js](https://nodejs.org/en) can be managed easily using the [Node Version Manager](https://github.com/nvm-sh/nvm).
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+To install all the necessary dependencies before initial boot, run `npm install` in the project's root directory.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+> [!info]
+> If you want to build the project (typically not recommended, as the application relies on the webpack server's reloading functionality), you may need to use a lower [Node.js](https://nodejs.org/en) version (like `v22.2.0`).
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+---
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## Preparing the Application
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+### Registering Providers
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+You will need to register the URLs of any **Providers** you want the application to interface with. Per default, many exemplary **Providers** are already registered. These include:
+
+| Application | Purpose |
+|-|-|
+| Dashboard Hub | Provides **Dashboards** and allows for simple CRUD functionality |
+| Example Provider | Provides some dummy data **Sources** and **Types** for testing purposes |
+| Component Compiler | Provides a set of default **Components** and has a [web interface](http://localhost:4433) for manually compiling new ones |
+
+
+Registering new **Providers** can be done through the application's `/src/dd_config.json` file, or through the interface found [here](http://localhost:3002) while the application is running.
+
+These **Providers** can be used as a basis for creating your own **Provider** application.
+
+> It must be noted that creating a **Dashboard Provider** is probably rarely necessary for many users, as simply modifying the `config.json` of the existing `/dashboard_provider/` is likely enough. Additionally, **Component Providers** are also not something that users might want to develop regularly, due to the complexity compiling building the **Components**.
+>
+> Creating custom Sources however, is intended to be frequently done, which is why the `/example_provider/` is the shortest and most simplified one of the helper applications.
+
+---
+
+## Running the Application
+
+Run `npm start` in the root of this directory, if you want to launch all of the applications simultaneously.
+
+You can also run applications individually, or in small groups:
+- The script `npm run dyndash` will start the application's [frontend](http://localhost:3000) and [config editor](http://localhost:3002).
+- The script `npm run providers` will start all of the default **Providers**.
+
+---
+
+## Using the Application
+
+The start page will show all **Dashboard** that have been provided to the application.
+
+![DynDash_Gallery_Clean](/media/screenshots/DynDash_Gallery_Clean.png)
+
+### Managing Dashboards
+
+Clicking on a folder path may reveal said path in the operating system's default file explorer.
+
+Files can be created, imported, reloaded, renamed, modified, duplicated, deleted, and recovered using the buttons found in the header of the application.
+
+![DynDash_Header_Gallery](/media/screenshots/DynDash_Header_Gallery.png)
+
+![DynDash_Header_Detail](/media/screenshots/DynDash_Header_Detail.png)
+
+It is also possible to import files by dragging them into the application. Valid drop targets include:
+- folder path on start page (automatically inserts file into folder)
+- file preview on start page (asks for replacement strategy)
+- **Dashboard** area in detail view (asks for replacement strategy)
+
+![DynDash_Gallery_Upload_File](/media/screenshots/DynDash_Gallery_Upload_File.png)
+
+![DynDash_Gallery_Upload_Folder](/media/screenshots/DynDash_Gallery_Upload_Folder.png)
+
+Clicking on a **Dashboard** will open said **Dashboard** in the application's detail view.
+
+### Detail View:
+
+The detail view will allow you to view and edit your **Dashboard**.
+
+![DynDash_Example](/media/screenshots/DynDash_Example.png)
+
+- This view has a sidebar that can be toggled by pressing `T` (default shortcut)
+- The application has four distinct "Tool Modes" that can be toggled through a click or by pressing the associated key
+    - `M` (Move) Enables moving the **Slots** by dragging and dropping them
+	- `D` (Draw) Enables drawing new **Slots**
+	- `R` (Rename, Resize, Remove) Allows for the renaming, resizing, and deletion of **Slots**
+	- `S` (Select) Allows to select multiple **Slots** at once
+
+Users can drag and drop **Components** and **Sources** onto these **Slots** while no tool is active (or while the select tool is made, enabling bulk operations).
+
+### Helpful Features:
+
+Generally speaking, most non-button elements can be clicked to reveal a modal with more information about them. This includes:
+- The icons of **Providers**
+- The boxes in the sidebar
+- The **Components** and **Sources** in the sidebar
+- Any **Type** icon
+
+Additionally, the application has modes to show keyboard shortcuts and more detailed information about the **Dashboards** and interface. Feel free to toggle through them using the header, and explore your **Dashboards** in different info modes.
+
+---
+
+## Development Status
+
+This is an early version of the application, so some features are not implemented quite as well or optimized as they could be.
+
+However, the application is in active development, with the goal of improving it in the areas where its implementation is lacking. An expansion of its features is also planned, though the details on the scope of that are currently unclear.
+
+This also means that some things are subject to change in future versions.
+
+> [!info]
+> The documentation of the application is currently quite rudimentary. This fact is known and one of the first areas that are likely to change a lot.
+
+---
+
+## Extending and Modifying the Application
+
+It is possible to extend the application by writing custom **Components** and **Provider** APIs for it. However, it is also possible to change the application itself and modify it, in order to fit your needs.
+
+In both cases, there is a `README` that is intended to be used as a guideline for any person interested in the development of these things:
+- [Extending the Application](./README_DEV.md) (**Components**, **Provider** APIs)
+- [Modifying the Application](./README_MOD.md) (Changing the base functionality)
+
+---
 
 ## License
-For open source projects, say how it is licensed.
+The project is licensed under the [GNU AGPL v3 License](https://www.gnu.org/licenses/agpl-3.0.de.html)
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+---
